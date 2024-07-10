@@ -96,6 +96,10 @@ custom_plugins=(
 {% endfor %}
 )
 
+source <(kubectl completion zsh)
+
+
+
 {% endif %}
 if [[ -f "${HOME}/.zsh/plugins" ]]; then
     . "${HOME}/.zshrc/plugins"
